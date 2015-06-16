@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Genetic Soylent</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http:/cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+    <style>
+        .table-condensed {
+            font-size: 10px;
+        }
+        .ingredientInput {
+            width: 50px;
+            text-align: center;
+        }
+        .nutrientInput {
+            width: 50px;
+            text-align: center;
+        }
+        .ratioInput {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <script type="text/javascript" src="js/GeneticSoylent.js"></script>
+    <script type="text/javascript" src="js/Recipe.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <h1 align="center">Genetic Soylent</h1>
+            <p align="center"><em>Random solutions to interesting problems</em></p>
+            <p><br></p>
+        </div>
+        <div class="col-xs-8>">
+            <br />
+            <form class="form-inline" align="center">
+                <label>Generation:</label>
+                <input class="generation form-control input-sm" type="text" style="width: 50px; text-align: center; margin-right: 20px; margin-left: 10px" />
+                <a class="btn btn-primary start-genetic-algorithm" href="#"><i class="icon-play"></i></a>
+                <a class="btn btn-primary pause-genetic-algorithm" href="#" style="display: none;"><i class="icon-pause"></i></a>
+                <a class="btn btn-default step-genetic-algorithm" href="#"><i class="icon-step-forward"></i></a>
+                <a class="btn btn-default reset-genetic-algorithm" href="#"><i class="icon-refresh"></i></a>
+            </form>
+            <form class="form-inline" align="center">
+                <label>Population:</label>
+                <input class="population form-control input-sm" type="text" style="width: 50px; text-align: center" value="100" />
+                <label style="margin-left: 20px;">Mutation probability:</label>
+                <input class="mutation-probability form-control" type="text" style="text-align: center; width: 50px" value="0.5" />
+                <label style="margin-left: 20px;">Mutation multiplier:</label>
+                <input class="mutation-multiplier form-control" type="text" style="text-align: center; width: 50px" value="0.1" />
+                <label style="margin-left: 20px;">Death rate:</label>
+                <input class="death-rate form-control input-sm" type="text" style="width: 50px; text-align: center" value="0.3" />
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="ingredientTable" class="col-xs-4"></div>
+        <div id="nutrientTable" class="col-xs-4"></div>
+        <div id="nutrientTableRemainder" class="col-xs-4"></div>
+    </div>
+    <div class="container">
+
+        <h2>What is this?</h2>
+        <p>Genetic Soylent is an attempt to automatically create a Soylent recipe given a list of ingredients and a target nutrient profile.</p>
+        <p>You can play with it by pressing <i class="icon-step-forward"></i> to step to the next generation, <i class="icon-play"></i> to step to next generations automatically and <i class="icon-refresh"></i> to reset the simulation.</p>
+        <p>Original code by nick: <a href="http://github.com/nick/genetic-soylent">http://github.com/nick/genetic-soylent</a></p>
+        <p>This version by 2potatoes: <a href="http://github.com/2potatoes/genetic-soylent">http://github.com/2potatoes/genetic-soylent</a></p>
+        <p>Notes on genetic soylent can be found on <a href="http://spudlent.blogspot.com/search/label/Genetic%20Soylent">2potatoes blog</a>.</p>
+        <h2>How it works</h2>
+        <ul>
+            <li>Generate 100 recipes, each recipe containing a random amount of each ingredient.</li>
+            <li>Score each recipe based on how close all the nutrients are to 100%.</li>
+            <li>Sort the recipes from best to worst.</li>
+            <li>Show the best one in the table above.</li>
+        </ul>
+        <p>On each subsequent 'generation', the following happens:</p>
+        <ul>
+            <li>Remove the worst 30 recipes from the list</li>
+            <li>Create 30 new Child recipes containing ingredient amounts taken from two randomly selected Parent recipes.</li>
+            <li>Ingredient amounts in each Child can also be mutated if the 'mutation probability' is met.</li>
+            <li>A mutation works by taking a random ingredient and increasing or decreasing the amount defined by the 'mutation multiplier'. For example, a mutation multiplier of 0.1 will increase or decrease the amount of an ingredient by 10%.</li>
+            <li>Finally, we re-calculate the scores for each recipe, sort them, and show the best one in the table.</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <h2>Choose Your Own Recipe</h2>
+        <p>This should now work with any recipe from <a href='http://diy.soylent.me'>diy.soylent.me</a>. Find your favorite recipe, add "/json" to the end of the URL, copy the resulting text and paste it into the box below.</p>
+        <p><em>Warning:</em> This is still very experimental. I've tried it with my own recipe and one other and it has worked, but I haven't double checked the numbers.</p>
+        <textarea id="inputJSON" rows="10" style="width:100%">
+        </textarea>
+    </div>
+
+    <script type="text/javascript" src="js/defaultJson.js"></script>
+    
