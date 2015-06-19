@@ -62,7 +62,7 @@ $(function(){
         var ingredients = [
       {
       "persistedAsin": "",
-      "name": "Soy_Lecithin_Granules",
+      "name": "Soy Lecithin Granules",
       "form": "Powder",
       "unit": "g",
       "container_size": 11339.8,
@@ -123,7 +123,7 @@ $(function(){
     },
     {
       "persistedAsin": "B004VLVG0M",
-      "name": "Sea_Salt",
+      "name": "Sea Salt",
       "form": "Powder",
       "unit": "g",
       "container_size": 2267.96,
@@ -184,7 +184,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Sunflower_Seeds",
+      "name": "Sunflower Seeds",
       "form": "Powder",
       "unit": "g",
       "container_size": 11339.8,
@@ -245,7 +245,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Barley_Malt_Flour",
+      "name": "Barley Malt Flour",
       "form": "Powder",
       "unit": "g",
       "container_size": 24947.6,
@@ -306,7 +306,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Brown_Rice_Protein_Isolate",
+      "name": "Brown Rice Protein Isolate",
       "form": "Powder",
       "unit": "g",
       "container_size": 24947.6,
@@ -367,7 +367,7 @@ $(function(){
     },
     {
       "persistedAsin": "B001DB4MFO",
-      "name": "Pea_Protein_Powder",
+      "name": "Pea Protein Powder",
       "form": "Powder",
       "unit": "g",
       "container_size": 19958.1,
@@ -428,7 +428,7 @@ $(function(){
     },
     {
       "persistedAsin": "B00028M47C",
-      "name": "Nutritional_Yeast_Powder",
+      "name": "Nutritional Yeast Powder",
       "form": "Powder",
       "unit": "g",
       "container_size": 4536,
@@ -489,7 +489,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Oat_Flour",
+      "name": "Oat Flour",
       "form": "Powder",
       "unit": "g",
       "container_size": 11340,
@@ -550,7 +550,7 @@ $(function(){
     },
     {
       "persistedAsin": "B004VLVD50",
-      "name": "Brown_Rice_Flour_Brown",
+      "name": "Brown Rice Flour Brown",
       "form": "Powder",
       "unit": "g",
       "container_size": 11340,
@@ -611,7 +611,7 @@ $(function(){
     },
     {
       "persistedAsin": "B00JYF1J2U",
-      "name": "Camu_Camu_Powder",
+      "name": "Camu Camu Powder",
       "form": "Powder",
       "unit": "g",
       "container_size": 2267.96,
@@ -668,11 +668,13 @@ $(function(){
       "currency": "$",
       "asin": "B00JYF1J2U",
       "volumeStr": "",
-      "id": "5581b2621df750831932a30d"
+      "id": "5581b2621df750831932a30d",
+      "maxAmount": 100,
+      "minAmount": 1
     },
     {
       "persistedAsin": "",
-      "name": "Seeds_chia_seeds_dried",
+      "name": "Seeds, chia seeds, dried",
       "form": "Powder",
       "unit": "g",
       "container_size": 24947.6,
@@ -733,7 +735,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Syrup_cane",
+      "name": "Syrup, cane",
       "form": "Powder",
       "unit": "g",
       "container_size": 907.185,
@@ -794,7 +796,7 @@ $(function(){
     },
     {
       "persistedAsin": "B000EDDSE8",
-      "name": "Golden_Flax_Meal",
+      "name": "Golden Flax Meal",
       "form": "Powder",
       "unit": "g",
       "container_size": 11339.8,
@@ -855,7 +857,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Spinach_powdered",
+      "name": "Spinach (powdered)",
       "form": "Powder",
       "unit": "g",
       "container_size": 453.592,
@@ -916,7 +918,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Royal_Jelly",
+      "name": "Royal Jelly",
       "form": "Powder",
       "unit": "g",
       "container_size": 1000,
@@ -977,7 +979,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Mushroom_Powder",
+      "name": "Mushroom Powder",
       "form": "Powder",
       "unit": "mg",     // "unit": "g"
       "container_size": 10000000, //10000
@@ -1038,7 +1040,7 @@ $(function(){
     },
     {
       "persistedAsin": "",
-      "name": "Leavening_agents_baking powder_low-sodium",
+      "name": "Leavening agents, baking powder, low-sodium",
       "form": "Powder",
       "unit": "g",
       "container_size": 11339.8,
@@ -1099,6 +1101,25 @@ $(function(){
     },
         ];
 
+        $.each(ingredients0, function(key, value){
+
+            //alert("Old value of " + key + " is: " + tempNutrition[key]);
+            var inputMax = ingredients0[key]["maxAmount"];
+
+            if(inputMax!=null && inputMax != undefined){
+                  ingredients[key]["maxAmount"] = inputMax;
+                  alert(inputMax);
+            }
+
+
+            var inputMin = ingredients0[key]["minAmount"];
+            if(inputMin!=null && inputMin != undefined){
+                  ingredients[key]["minAmount"] = inputMin;
+                  alert(inputMin);
+            }
+            //alert("New value of " + key + " is: " + tempNutrition[key]);
+        });
+
         $.each(ingredients, function(key, value){
             // divide each value by serving size to normalize them
             var servingSize = ingredients[key]["serving"];
@@ -1120,17 +1141,29 @@ $(function(){
                    ingredients[key][ingredientNutrient] = ingredientValue/servingSize;
                }
             });
-            // also, for each ingredient, add a maxAmount
-            
-            ingredients[key]["maxAmount"] = 500;
-            ingredients[key]["minAmount"] =   0;
-            
 
+            // also, for each ingredient, add a maxAmount
+            var inputMax = ingredients[key]["maxAmount"];
+            if(inputMax == null || inputMax == undefined)
+                  ingredients[key]["maxAmount"] = 500;
+
+            var inputMin = ingredients[key]["minAmount"];
+            if(inputMin == null || inputMin == undefined)
+                  ingredients[key]["minAmount"] =   0;
+            /*
+            if(ingredients[key]["name"] == "Camu Camu Powder"){
+
+                  ingredients[key]["maxAmount"] = 100;
+                  ingredients[key]["minAmount"] = 1;
+            }
+            */
             // get the cost of the item per unit of measure
             ingredients[key]["cost"] = ingredients[key]["item_cost"] / ingredients[key]["container_size"];
         });
+      
+        // Add a maxAmount here for each ingredient 
+        
 
-        //ingredients["Camu Camu Powder"]["maxAmount"] = 100;
         return ingredients;
     }
 

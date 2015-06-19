@@ -1,0 +1,341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"min",
+				"minAmount"
+			],
+			[
+				"true",
+				"trueKey"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"nu",
+				"nutrition"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 483.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator"
+	],
+	"file_history":
+	[
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/A.json",
+		"/C/Users/Administrator/Documents/GitHub/ExcelToJson/summary.json",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/jsonbackup.js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/json samples/ingredients.json",
+		"/C/Users/Administrator/Documents/GitHub/ExcelToJson/excelToJson.py",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/index.html",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/defaultJson.js",
+		"/C/Users/Administrator/Documents/GitHub/LeetCode/src/edu/nyu/lishiyi/RotateList.java",
+		"/C/Users/Administrator/Documents/GitHub/LeetCode/src/edu/nyu/lishiyi/ReorderList.java",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/GeneticSoylent.js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/Recipe.js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/app.js",
+		"/C/Users/Administrator/Documents/GitHub/LeetCode/leetcode.sublime-project",
+		"/C/Users/Administrator/Desktop/runJava.bat",
+		"/C/Users/Administrator/Documents/GitHub/LeetCode/src/edu/nyu/lishiyi/[path",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/js/Recipe.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/js/GeneticSoylent.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/js/app.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/js/defaultJson.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/index.html",
+		"/C/Users/Administrator/Documents/GitHub/ExcelToJson/summary.jsn",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/comments/_comment.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/layouts/application.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/articles/new.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/db/migrate/20150608225449_create_articles.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/models/article.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/controllers/comments_controller.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/comments/_form.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/articles/show.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/articles/index.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/articles/_form.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/articles/edit.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/models/comment.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/controllers/articles_controller.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/config/routes.rb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/views/welcome/index.html.erb",
+		"/C/Users/Administrator/Documents/GitHub/blog/app/controllers/welcome_controller.rb",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/GeneticSoylent.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/Recipe.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/app.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json samples/json samples/A.json",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json samples/json samples/A.txt",
+		"/C/Users/Administrator/Documents/GitHub/win_fetch_cacerts.rb"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	public void reorderList(ListNode head) {\n",
+			"{\n",
+			"ratios",
+			"defaultRatios",
+			"numerator",
+			"ratio",
+			"change",
+			"ingredient",
+			"ingredientHtml",
+			"GeneticSoylent",
+			"inputJSON",
+			"jsonToRun",
+			"convertJSONIngredientsToGeneticIngredients",
+			"ingredients0",
+			"inputMin",
+			"ingredients0",
+			"convertJSONIngredientsToGeneticIngredients",
+			"ingredients",
+			"camu",
+			"ingredients",
+			"\"name\"",
+			"maxAmount",
+			"Camu Camu Powder",
+			"max",
+			"min",
+			"Selenium",
+			"Boron",
+			"fluoride",
+			"tempNutrition",
+			"nutrition",
+			"dataToLoad",
+			"convertJSONNutritionToGeneticNutrition",
+			"targetNutrients",
+			"target",
+			"list",
+			"table2jsn",
+			"tablelist",
+			"convertJSONIngredientsToGeneticIngredients",
+			"jsonToRun",
+			"ingredient",
+			"ingredientTable",
+			"Recipe",
+			"dataToLoad",
+			"maxAmount",
+			"GeneticSoylent",
+			"convertJSONIngredientsToGeneticIngredients",
+			"maxAmount",
+			"targetNutrients",
+			"testGeneticSoylent",
+			"inputJSON",
+			"ingredients",
+			"soylent",
+			"calories",
+			"inputJSON",
+			"ingredients",
+			"row",
+			"GeneticSoylent",
+			"start-genetic-algorithm",
+			"btn",
+			"article",
+			"Article",
+			"create",
+			"redirect_to",
+			"end",
+			"c"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.481743323239,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 71.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Nutrient-Calculator.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

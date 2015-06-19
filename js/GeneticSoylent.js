@@ -14,6 +14,13 @@ var GeneticSoylent = function(opts) {
 
     this.ratios = this.defaultRatios();
 
+//For test
+    //alert("Numerator: " + this.ratios['Omega-6:Omega-3']['numerator']);
+    alert("Numerator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['numerator']);
+    //alert(this.recipes[0].ingredientAmounts);
+    //alert("Denominator: " + this.ratios['Omega-6:Omega-3']['denominator']);
+    alert("Denominator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['denominator']);
+
     this.reset();
 };
 
@@ -74,6 +81,19 @@ GeneticSoylent.prototype.sortRecipes = function(a, b) {
 };
 
 GeneticSoylent.prototype.defaultRatios = function() {
+
+    /*
+    if(this.recipes[0].ingredientAmounts != null){
+
+      var n = render().ingredientHtml.recipes[0].ingredientAmounts;
+      var d = render().ingredientHtml.recipes[0].ingredientAmounts;
+    }
+    else{
+  */
+      var n = this.ingredients[0]["amount"];
+      var d = this.ingredients[1]["amount"];
+    //}
+
     return {
        'Calcium:Phosphorus': {min: 1, max: 2.5, numerator: "calcium", denominator: "phosphorus", unitCorrection: 1, importanceFactor: 1},
        'Calcium:Magnesium':  {min: 1, max: 2, numerator: "calcium", denominator: "magnesium", unitCorrection: 1000, importanceFactor: 1},
@@ -82,6 +102,8 @@ GeneticSoylent.prototype.defaultRatios = function() {
        'Zinc:Copper':  {min: 10, max: 15, numerator: "zinc", denominator: "copper", unitCorrection: 1, importanceFactor: 1},
        'Iron:Zinc':  {min: 0.01, max: 2, numerator: "iron", denominator: "zinc", unitCorrection: 1, importanceFactor: 1},
        'Omega-6:Omega-3':  {min: 1, max: 2.3, numerator: "omega_6", denominator: "omega_3", unitCorrection: 1, importanceFactor: 1},
+       //'Soy Lecithin Granules:Sea Sal':  {min: 0.0005, max: 777, numerator: this.ingredients[0]["amount"], denominator: this.ingredients[1]["amount"], unitCorrection: 1, importanceFactor: 1},
+       'Soy Lecithin Granules:Sea Sal':  {min: 0.0005, max: 777, numerator: n, denominator: d, unitCorrection: 1, importanceFactor: 1},
     };
 };
 
@@ -243,12 +265,12 @@ GeneticSoylent.prototype.render = function() {
         var keyInfo = this.name.split("_._");
         testGeneticSoylent.ratios[keyInfo[0]][keyInfo[1]] = this.value;
     });
-/**
+
     $('.ingredientInput').change(function(){
         var keyInfo = this.name.split("_._");
         testGeneticSoylent.ingredients[keyInfo[0]][keyInfo[1]] = +this.value;
     });
-*/
+
     $('.generation').val(this.currentGeneration);
 
 };

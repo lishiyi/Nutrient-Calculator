@@ -114,7 +114,23 @@ Recipe.prototype.calculateCompleteness = function() {
     this.ratioCompleteness = {};
     this.ratioAmounts = {};
     _.each(_.keys(this.soylent.ratios), function(theKey) {
+        /* oringinal code
         var ratioEvaluation = this.nutrientTotals[this.soylent.ratios[theKey]["numerator"]] / this.nutrientTotals[this.soylent.ratios[theKey]["denominator"]] * this.soylent.ratios[theKey].unitCorrection;
+        */
+        var n = this.soylent.ratios[theKey]["numerator"];
+        var d = this.soylent.ratios[theKey]["denominator"];
+        if(isNaN(n)){
+
+            var ratioEvaluation = this.nutrientTotals[n] / this.nutrientTotals[d] * this.soylent.ratios[theKey].unitCorrection;
+        }
+        else{
+
+            var ratioEvaluation = n/d * this.soylent.ratios[theKey].unitCorrection;
+        }
+        /**
+        The code above is what I change.
+        */
+
         if (ratioEvaluation < this.soylent.ratios[theKey].min) {
             completeness = 100 - ((ratioEvaluation / this.soylent.ratios[theKey].min) * 100);
         }
