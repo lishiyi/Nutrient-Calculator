@@ -180,7 +180,9 @@ $(function(){
       "currency": "$",
       "asin": "B004VLVG0M",
       "volumeStr": "",
-      "id": "5581b2621df750831932a315"
+      "id": "5581b2621df750831932a315",
+      "maxAmount": 4,
+      "minAmount": 3
     },
     {
       "persistedAsin": "",
@@ -485,7 +487,9 @@ $(function(){
       "currency": "$",
       "asin": "B00028M47C",
       "volumeStr": "",
-      "id": "5581b2621df750831932a310"
+      "id": "5581b2621df750831932a310",
+      "maxAmount": 5*16,
+      "minAmount": 3*16
     },
     {
       "persistedAsin": "",
@@ -613,12 +617,12 @@ $(function(){
       "persistedAsin": "B00JYF1J2U",
       "name": "Camu Camu Powder",
       "form": "Powder",
-      "unit": "g",
-      "container_size": 2267.96,
+      "unit": "mg",               //g
+      "container_size": 2267960, //2267.96
       "item_cost": 255,
       "source": "Amazon",
       "url": "https://www.amazon.com/dp/B00JYF1J2U?tag=19-82341-20",
-      "amount": 0.45,
+      "amount": 450, //0.45
       "volume": null,
       "volume_unit": "cup",
       "serving": 1,
@@ -645,7 +649,7 @@ $(function(){
       "maganese": 0,
       "molybdenum": 0,
       "phosphorus": 0,
-      "potassium": 0.024,
+      "potassium": 0.000024, //0.024
       "selinium": 0,
       "sodium": 0,
       "sulfur": 0,
@@ -653,7 +657,7 @@ $(function(){
       "vitamin_a": 0,
       "vitamin_b6": 0,
       "vitamin_b12": 0,
-      "vitamin_c": 200,
+      "vitamin_c": 0.2, //200
       "vitamin_d": 0,
       "vitamin_e": 0,
       "vitamin_k": 0,
@@ -669,8 +673,8 @@ $(function(){
       "asin": "B00JYF1J2U",
       "volumeStr": "",
       "id": "5581b2621df750831932a30d",
-      "maxAmount": 100,
-      "minAmount": 1
+      "maxAmount": 400,
+      "minAmount": 380
     },
     {
       "persistedAsin": "",
@@ -792,7 +796,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a30b"
+      "id": "5581b2621df750831932a30b",
+      "maxAmount": 30*100,
+      "minAmount": 20*100
     },
     {
       "persistedAsin": "B000EDDSE8",
@@ -914,7 +920,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a309"
+      "id": "5581b2621df750831932a309",
+      "maxAmount": 6*8,
+      "minAmount": 4*8
     },
     {
       "persistedAsin": "",
@@ -975,7 +983,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a308"
+      "id": "5581b2621df750831932a308",
+      "maxAmount": 9*33.33,
+      "minAmount": 5*33.33
     },
     {
       "persistedAsin": "",
@@ -986,7 +996,7 @@ $(function(){
       "item_cost": 810,
       "source": "",
       "url": "",
-      "amount": 0.02,
+      "amount": 20,
       "volume": null,
       "volume_unit": "cup",
       "serving": 1,
@@ -1036,7 +1046,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a307"
+      "id": "5581b2621df750831932a307",
+      "maxAmount": 25,
+      "minAmount": 15
     },
     {
       "persistedAsin": "",
@@ -1097,7 +1109,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a306"
+      "id": "5581b2621df750831932a306",
+      "maxAmount": 19*100,
+      "minAmount": 15*100
     },
         ];
 
@@ -1145,7 +1159,7 @@ $(function(){
             // also, for each ingredient, add a maxAmount
             var inputMax = ingredients[key]["maxAmount"];
             if(inputMax == null || inputMax == undefined)
-                  ingredients[key]["maxAmount"] = 500;
+                  ingredients[key]["maxAmount"] = 300;
 
             var inputMin = ingredients[key]["minAmount"];
             if(inputMin == null || inputMin == undefined)

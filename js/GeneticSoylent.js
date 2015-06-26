@@ -1,6 +1,7 @@
 /**
  * GeneticSoylent should be initialized with a target nutrient profile and a list of ingredients.
  */
+
 var GeneticSoylent = function(opts) {
     opts = opts || {};
 
@@ -16,10 +17,10 @@ var GeneticSoylent = function(opts) {
 
 //For test
     //alert("Numerator: " + this.ratios['Omega-6:Omega-3']['numerator']);
-    alert("Numerator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['numerator']);
+    //alert("Numerator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['numerator']);
     //alert(this.recipes[0].ingredientAmounts);
     //alert("Denominator: " + this.ratios['Omega-6:Omega-3']['denominator']);
-    alert("Denominator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['denominator']);
+    //alert("Denominator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['denominator']);
 
     this.reset();
 };
@@ -90,8 +91,8 @@ GeneticSoylent.prototype.defaultRatios = function() {
     }
     else{
   */
-      var n = this.ingredients[0]["amount"];
-      var d = this.ingredients[1]["amount"];
+      //var n = this.ingredients[0]["amount"];
+      //var d = this.ingredients[1]["amount"];
     //}
 
     return {
@@ -101,9 +102,9 @@ GeneticSoylent.prototype.defaultRatios = function() {
        'Iron:Copper':  {min: 10, max: 17, numerator: "iron", denominator: "copper", unitCorrection: 1, importanceFactor: 1},
        'Zinc:Copper':  {min: 10, max: 15, numerator: "zinc", denominator: "copper", unitCorrection: 1, importanceFactor: 1},
        'Iron:Zinc':  {min: 0.01, max: 2, numerator: "iron", denominator: "zinc", unitCorrection: 1, importanceFactor: 1},
-       'Omega-6:Omega-3':  {min: 1, max: 2.3, numerator: "omega_6", denominator: "omega_3", unitCorrection: 1, importanceFactor: 1},
+       'Omega-6:Omega-3':  {min: 0.9, max: 1.1, numerator: "omega_6", denominator: "omega_3", unitCorrection: 1, importanceFactor: 1},
        //'Soy Lecithin Granules:Sea Sal':  {min: 0.0005, max: 777, numerator: this.ingredients[0]["amount"], denominator: this.ingredients[1]["amount"], unitCorrection: 1, importanceFactor: 1},
-       'Soy Lecithin Granules:Sea Sal':  {min: 0.0005, max: 777, numerator: n, denominator: d, unitCorrection: 1, importanceFactor: 1},
+       //'Soy Lecithin Granules:Sea Sal':  {min: 0.0005, max: 777, numerator: n, denominator: d, unitCorrection: 1, importanceFactor: 1},
     };
 };
 
