@@ -16,7 +16,16 @@ var Recipe = function(soylent, ingredientAmounts) {
         for (var i = 0; i < this.soylent.ingredients.length; i++){
             var theMax = this.soylent.ingredients[i].maxAmount;
             var theMin = this.soylent.ingredients[i].minAmount;
-            this.ingredientAmounts.push(theMin + (Math.random() * (theMax - theMin)));
+            //we want 2/1 ratio of brown rice/pea protein
+            //if(i == 5){
+
+            //    this.ingredientAmounts.push( 10 ); //(ingredientAmounts[4] * 0.5)
+            //}
+            //else{
+
+                this.ingredientAmounts.push(theMin + (Math.random() * (theMax - theMin)));
+            //}
+            
         }
     }
 
@@ -41,8 +50,21 @@ Recipe.prototype.createChildWith = function(mate) {
         var newIngredientAmount = randomParent.ingredientAmounts[i];
         newIngredientAmount = Math.min(newIngredientAmount, theMax);
         newIngredientAmount = Math.max(newIngredientAmount, theMin);
+        //for the protein we want 2/1 ratio of brown rice/pea protein
+        if(i == 5){
 
-        childIngredientAmounts.push(randomParent.ingredientAmounts[i]);
+            childIngredientAmounts.push(childIngredientAmounts[4] * 0.5);
+        }
+        //let's keep it 50/25/25 for now barley malt/oats/rice flour [3]/[7]/[8]
+        else if(i == 7 || i == 8){
+
+            childIngredientAmounts.push(childIngredientAmounts[3] * 0.5);
+        }
+        else{
+
+            childIngredientAmounts.push(randomParent.ingredientAmounts[i]);
+        }
+        
     }
 
     // Pick some random ingredient in the recipe to mutate.
