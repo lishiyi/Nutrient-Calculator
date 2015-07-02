@@ -119,7 +119,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a316"
+      "id": "5581b2621df750831932a316",
+      "maxAmount": 17*8,
+      "minAmount": 13*8
     },
     {
       "persistedAsin": "B004VLVG0M",
@@ -735,7 +737,9 @@ $(function(){
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a30c"
+      "id": "5581b2621df750831932a30c",
+      "maxAmount": 25 * 100,
+      "minAmount": 15 * 100
     },
     {
       "persistedAsin": "",
@@ -1696,6 +1700,15 @@ $(function(){
         // we make the calorie defaults more reasonable
         newNutrition["calories"]["max"] = newNutrition["calories"]["min"] + 100;
         newNutrition["calories"]["min"] = newNutrition["calories"]["min"] - 100;
+
+        newNutrition["carbs"]["max"] = newNutrition["carbs"]["min"] + 20;
+        newNutrition["carbs"]["min"] = newNutrition["carbs"]["min"] - 20;
+
+        newNutrition["fat"]["max"] = newNutrition["fat"]["min"] + 10;
+        newNutrition["fat"]["min"] = newNutrition["fat"]["min"] - 10;
+
+        newNutrition["protein"]["max"] = newNutrition["protein"]["min"] + 10;
+        newNutrition["protein"]["min"] = newNutrition["protein"]["min"] - 10;
 
         // also add a cost target
         newNutrition["cost"] = {
