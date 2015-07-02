@@ -1,6 +1,5 @@
-{
-  "ingredients": [
-    {
+"ingredients" : [
+      {
       "persistedAsin": "",
       "name": "Soy Lecithin Granules",
       "form": "Powder",
@@ -120,7 +119,9 @@
       "currency": "$",
       "asin": "B004VLVG0M",
       "volumeStr": "",
-      "id": "5581b2621df750831932a315"
+      "id": "5581b2621df750831932a315",
+      "maxAmount": 4,
+      "minAmount": 3
     },
     {
       "persistedAsin": "",
@@ -425,7 +426,9 @@
       "currency": "$",
       "asin": "B00028M47C",
       "volumeStr": "",
-      "id": "5581b2621df750831932a310"
+      "id": "5581b2621df750831932a310",
+      "maxAmount": 5*16,
+      "minAmount": 3*16
     },
     {
       "persistedAsin": "",
@@ -553,12 +556,12 @@
       "persistedAsin": "B00JYF1J2U",
       "name": "Camu Camu Powder",
       "form": "Powder",
-      "unit": "g",
-      "container_size": 2267.96,
+      "unit": "mg",               //g
+      "container_size": 2267960, //2267.96
       "item_cost": 255,
       "source": "Amazon",
       "url": "https://www.amazon.com/dp/B00JYF1J2U?tag=19-82341-20",
-      "amount": 0.45,
+      "amount": 450, //0.45
       "volume": null,
       "volume_unit": "cup",
       "serving": 1,
@@ -585,7 +588,7 @@
       "maganese": 0,
       "molybdenum": 0,
       "phosphorus": 0,
-      "potassium": 0.024,
+      "potassium": 0.000024, //0.024
       "selinium": 0,
       "sodium": 0,
       "sulfur": 0,
@@ -593,7 +596,7 @@
       "vitamin_a": 0,
       "vitamin_b6": 0,
       "vitamin_b12": 0,
-      "vitamin_c": 200,
+      "vitamin_c": 0.2, //200
       "vitamin_d": 0,
       "vitamin_e": 0,
       "vitamin_k": 0,
@@ -608,7 +611,9 @@
       "currency": "$",
       "asin": "B00JYF1J2U",
       "volumeStr": "",
-      "id": "5581b2621df750831932a30d"
+      "id": "5581b2621df750831932a30d",
+      "maxAmount": 400,
+      "minAmount": 380
     },
     {
       "persistedAsin": "",
@@ -730,7 +735,9 @@
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a30b"
+      "id": "5581b2621df750831932a30b",
+      "maxAmount": 30*100,
+      "minAmount": 20*100
     },
     {
       "persistedAsin": "B000EDDSE8",
@@ -852,7 +859,9 @@
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a309"
+      "id": "5581b2621df750831932a309",
+      "maxAmount": 6*8,
+      "minAmount": 4*8
     },
     {
       "persistedAsin": "",
@@ -913,21 +922,23 @@
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a308"
+      "id": "5581b2621df750831932a308",
+      "maxAmount": 9*33.33,
+      "minAmount": 5*33.33
     },
     {
       "persistedAsin": "",
       "name": "Mushroom Powder",
       "form": "Powder",
-      "unit": "g",
-      "container_size": 10000,
+      "unit": "mg",     // "unit": "g"
+      "container_size": 10000000, //10000
       "item_cost": 810,
       "source": "",
       "url": "",
-      "amount": 0.02,
+      "amount": 20,
       "volume": null,
       "volume_unit": "cup",
-      "serving": 0.01,
+      "serving": 1,
       "calories": 0,
       "carbs": 0,
       "protein": 0,
@@ -960,7 +971,7 @@
       "vitamin_b6": 0,
       "vitamin_b12": 0,
       "vitamin_c": 0,
-      "vitamin_d": 400,
+      "vitamin_d": 40, //40000
       "vitamin_e": 0,
       "vitamin_k": 0,
       "thiamin": 0,
@@ -974,7 +985,9 @@
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a307"
+      "id": "5581b2621df750831932a307",
+      "maxAmount": 25,
+      "minAmount": 15
     },
     {
       "persistedAsin": "",
@@ -1035,84 +1048,7 @@
       "currency": "$",
       "asin": "",
       "volumeStr": "",
-      "id": "5581b2621df750831932a306"
-    }
-  ],
-  "nutrientTargets": {
-    "zinc_max": 40,
-    "zinc": 11,
-    "vitamin_k_max": 0,
-    "vitamin_k": 120,
-    "vitamin_e_max": 1000,
-    "vitamin_e": 20,
-    "vitamin_d_max": 4000,
-    "vitamin_d": 600,
-    "vitamin_c_max": 2000,
-    "vitamin_c": 90,
-    "vitamin_b6_max": 100,
-    "vitamin_b6": 1.3,
-    "vitamin_b12_max": 0,
-    "vitamin_b12": 2.4,
-    "vitamin_a_max": 10000,
-    "vitamin_a": 3000,
-    "thiamin_max": 0,
-    "thiamin": 1.2,
-    "sulfur_max": 0,
-    "sulfur": 2,
-    "sodium_max": 2.3,
-    "sodium": 1.5,
-    "selinium_max": 400,
-    "selinium": 55,
-    "riboflavin_max": 0,
-    "riboflavin": 1.3,
-    "protein_max": 0,
-    "protein": 85,
-    "potassium_max": 0,
-    "potassium": 3.5,
-    "phosphorus_max": 4,
-    "phosphorus": 0.7,
-    "panthothenic_max": 0,
-    "panthothenic": 5,
-    "omega_6_max": 0,
-    "omega_6": 17,
-    "omega_3_max": 0,
-    "omega_3": 1.6,
-    "niacin_max": 35,
-    "niacin": 16,
-    "name": "U.S. government DRI, male 19-50, 2000 calories",
-    "molybdenum_max": 2000,
-    "molybdenum": 45,
-    "magnesium_max": 0,
-    "magnesium": 420,
-    "maganese_max": 11,
-    "maganese": 2.3,
-    "iron_max": 45,
-    "iron": 8,
-    "iodine_max": 1100,
-    "iodine": 150,
-    "folate_max": 1000,
-    "folate": 400,
-    "fiber_max": 0,
-    "fiber": 28,
-    "fat_max": 0,
-    "fat": 65,
-    "copper_max": 10,
-    "copper": 0.9,
-    "chromium_max": 0,
-    "chromium": 35,
-    "choline_max": 3500,
-    "choline": 550,
-    "cholesterol_max": 0,
-    "cholesterol": 0,
-    "chloride_max": 3.6,
-    "chloride": 2.3,
-    "carbs_max": 0,
-    "carbs": 250,
-    "calories_max": 0,
-    "calories": 2000,
-    "calcium_max": 2.5,
-    "calcium": 1,
-    "biotin_max": 0,
-    "biotin": 30
-  }
-}
+      "id": "5581b2621df750831932a306",
+      "maxAmount": 19*100,
+      "minAmount": 15*100
+    },]
