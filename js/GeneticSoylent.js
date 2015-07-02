@@ -50,6 +50,7 @@ GeneticSoylent.prototype.nextGeneration = function() {
         var parentTwo = this.recipes[Math.floor(Math.random() * recipesToKeep)];
         var childRecipe = parentOne.createChildWith(parentTwo);
 
+        //childRecipe
         this.recipes.push(childRecipe);
     }
 

@@ -22,8 +22,8 @@ var Recipe = function(soylent, ingredientAmounts) {
             //    this.ingredientAmounts.push( 10 ); //(ingredientAmounts[4] * 0.5)
             //}
             //else{
-
-                this.ingredientAmounts.push(theMin + (Math.random() * (theMax - theMin)));
+            //alert(this.soylent.ingredients[i]);
+            this.ingredientAmounts.push(theMin + (Math.random() * (theMax - theMin)));
             //}
             
         }
