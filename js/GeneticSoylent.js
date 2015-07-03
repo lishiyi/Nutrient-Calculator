@@ -57,7 +57,12 @@ GeneticSoylent.prototype.nextGeneration = function() {
     this.sortRecipes();
     this.currentGeneration++;
     this.render();
+    //TODO
+    /*
+    if(currentGeneration > 5000){
 
+    }
+    */
     if (this.autoGenerate) {
         var self = this;
         setTimeout(function() {
