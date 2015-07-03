@@ -251,6 +251,28 @@ GeneticSoylent.prototype.render = function() {
     }));
 
 
+    var ingredientHtmlJson = _.template([
+        '{',
+        '<br>',
+        '<% _.each(ingredients, function(ingredient, idx) { %>',
+            '&nbsp;&nbsp;"<%= ingredient.name %>"',
+            ': ',
+            '<%= Math.round(amounts[idx]) %>',
+            ',',
+            '<br>',
+        '<% }); %>',
+        '}'
+    ].join(''));
+
+    $('#ingredientTableJson').html(ingredientHtmlJson({
+        total: this.recipes[0].nutrientTotals,
+        amounts: this.recipes[0].ingredientAmounts,
+        ingredients: this.ingredients,
+        targetProfile: this.targetNutrients,
+        completenessScore: this.recipes[0].completenessScore,
+        nutrientCompleteness: this.recipes[0].nutrientCompleteness,
+        nutrientKeys: _.keys(this.targetNutrients)
+    }));
 
     $('.nutrientInput').change(function(){
         // split the name of the function by separator "_._"
