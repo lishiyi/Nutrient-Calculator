@@ -56,6 +56,30 @@ $(function(){
         testGeneticSoylent.render();
     });
 
+    $('#clickJSON').click(function(){
+        var jsonToRun = {"nutrientTargets": { "calories": 2605.68, "protein": 140, "fat": 56, "carbs": 385.42, "name": "mikewillmadeit@gmail.com", "gender": "Male", "age": 28 }};
+        if(!jsonToRun.ingredients) { jsonToRun.ingredients = {"ingredients": [{"Nothing":""},]}  };
+        testGeneticSoylent = new GeneticSoylent({
+                    ingredients: convertJSONIngredientsToGeneticIngredients(jsonToRun.ingredients),
+                    targetNutrients: convertJSONNutritionToGeneticNutrition(jsonToRun.nutrientTargets)
+        });
+
+        testGeneticSoylent.reset();
+        testGeneticSoylent.render();
+    });
+
+    $('#clickJSON2').click(function(){
+        var jsonToRun = {"nutrientTargets": { "calories": 3220.2, "protein": 160, "fat": 64, "carbs": 501.05, "name": "sebastian@vit.fitness", "gender": "Male", "age": 21 }};
+        if(!jsonToRun.ingredients) { jsonToRun.ingredients = {"ingredients": [{"Nothing":""},]}  };
+        testGeneticSoylent = new GeneticSoylent({
+                    ingredients: convertJSONIngredientsToGeneticIngredients(jsonToRun.ingredients),
+                    targetNutrients: convertJSONNutritionToGeneticNutrition(jsonToRun.nutrientTargets)
+        });
+
+        testGeneticSoylent.reset();
+        testGeneticSoylent.render();
+    });
+
     function convertJSONIngredientsToGeneticIngredients(ingredients0){
 
         //document.write("<script type="text/javascript" src="js/defaultJson.js"></script>");
@@ -1730,7 +1754,8 @@ $(function(){
     $(document).ready(function() {
         var loadRecipe = getUrlVar("recipe");
         if (loadRecipe) {
-            var queryString = "http://diy.soylent.me/recipes/" + loadRecipe + "/json?callback=?";
+            //var queryString = "http://diy.soylent.me/recipes/" + loadRecipe + "/json?callback=?";
+            var queryString = "https://github.com/lishiyi/Nutrient-Calculator/blob/master/js/json.js";
             // As always, thanks stackoverflow:
             // http://stackoverflow.com/questions/6809053/simple-jquery-php-and-jsonp-example
             $.getJSON(queryString,'geneticCallback',function(dataToLoad){
