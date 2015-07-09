@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"form"
+			],
+			[
+				"json",
+				"jsonToRun"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"prot",
+				"protein"
+			],
+			[
+				"prt",
+				"protein"
+			],
+			[
+				"child",
+				"childRecipe"
+			],
+			[
+				"a",
+				"amount"
+			],
+			[
+				"ingr",
+				"ingredients"
+			],
+			[
 				"min",
 				"minAmount"
 			],
@@ -23,6 +55,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/views.py",
+			"settings":
+			{
+				"buffer_size": 1919,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/templates/user.html",
+			"settings":
+			{
+				"buffer_size": 934,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 53031,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/GeneticSoylent.js",
+			"settings":
+			{
+				"buffer_size": 13133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/Recipe.js",
+			"settings":
+			{
+				"buffer_size": 7390,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/models.py",
+			"settings":
+			{
+				"buffer_size": 866,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/forms.py",
+			"settings":
+			{
+				"buffer_size": 1057,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/JavaC.sublime-build",
 	"build_system_choices":
@@ -89,17 +185,50 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator"
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json",
+		"/C/Users/Administrator/Documents/GitHub/VIT",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/templates",
+		"/C/Users/Administrator/Documents/GitHub/6083",
+		"/C/Users/Administrator/Documents/GitHub/6083/app",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/templates"
 	],
 	"file_history":
 	[
-		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/A.json",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/templates/signup.html",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/models.py",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/views.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app__init__.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/config.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/__init__.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/templates/index.html",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/templates/user.html",
 		"/C/Users/Administrator/Documents/GitHub/ExcelToJson/summary.json",
-		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/jsonbackup.js",
-		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/json samples/ingredients.json",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/ingredients.json",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/A.json",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/views.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/app/models.py",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/json.js",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/templates/base.html",
+		"/C/Users/Administrator/Documents/GitHub/Webapp/app.py",
+		"/C/Users/Administrator/Documents/GitHub/VIT/run.py",
+		"/C/Users/Administrator/Documents/GitHub/Webapp/templates/index.html",
 		"/C/Users/Administrator/Documents/GitHub/ExcelToJson/excelToJson.py",
 		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/index.html",
+		"/C/Users/Administrator/Documents/GitHub/6083/app/static/js/script.js",
+		"/C/Users/Administrator/Documents/GitHub/6083/run.py",
+		"/C/Users/Administrator/Documents/GitHub/6083/posts.sql",
+		"/C/Users/Administrator/Documents/GitHub/6083/tourini2.sql",
 		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/defaultJson.js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json.html",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/jsonbackup.js",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/json samples/ingredients.json",
+		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/json/json samples/jsonbackup.js",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/A.json",
+		"/C/Users/Administrator/Documents/GitHub/genetic-soylent/json/json samples/jsonbackup.js",
 		"/C/Users/Administrator/Documents/GitHub/LeetCode/src/edu/nyu/lishiyi/RotateList.java",
 		"/C/Users/Administrator/Documents/GitHub/LeetCode/src/edu/nyu/lishiyi/ReorderList.java",
 		"/C/Users/Administrator/Documents/GitHub/Nutrient-Calculator/js/GeneticSoylent.js",
@@ -153,6 +282,73 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"inputJSON",
+			"currentGeneration",
+			"nextGeneration",
+			"start-genetic-algorithm",
+			"testGeneticSoylent",
+			"inputJSON",
+			"geneticCallback",
+			"name",
+			"ingredientHtmlJson",
+			"ingredientTable",
+			"ingredientHtml",
+			"Recipe",
+			"ingredientTable",
+			"col-xs-4",
+			"ajax",
+			"chia",
+			"soy lecithin",
+			"sunflower",
+			"ingredientTable",
+			"Recipe",
+			"nextGeneration",
+			"parentOne",
+			"createChildWith",
+			"ingredientAmounts",
+			"nutrientTotals",
+			"GeneticSoylent",
+			"convertJSONIngredientsToGeneticIngredients",
+			"GeneticSoylent",
+			"Recipe",
+			"Ratios",
+			"ratios",
+			"defaultRatios",
+			"ingredientAmounts",
+			"amount",
+			"recipes",
+			"amount",
+			"ratio",
+			"ingredients",
+			"ratios",
+			"defaultRatios",
+			"ratio",
+			"ingredients",
+			"amount",
+			"omega",
+			"Nutrtitional Yeast",
+			"omega",
+			"ingredientHtml",
+			"recipes",
+			"nutrientTotals",
+			"ingredientAmounts",
+			"recipes",
+			"ingredientTable",
+			"\"Amount\"",
+			" amount ",
+			"amount",
+			"default",
+			"3.75",
+			"25",
+			"defaultRatios",
+			"defaultratio",
+			"theKey",
+			"_.keys",
+			"ratios",
+			"nutrients",
+			"ratios",
+			"GeneticSoylent",
+			"ratio",
 			"	public void reorderList(ListNode head) {\n",
 			"{\n",
 			"ratios",
@@ -213,11 +409,7 @@
 			"start-genetic-algorithm",
 			"btn",
 			"article",
-			"Article",
-			"create",
-			"redirect_to",
-			"end",
-			"c"
+			"Article"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -235,13 +427,249 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1803,
+								1803
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 666.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/templates/user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 53031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2850,
+								2850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1163.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/GeneticSoylent.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1449,
+								1449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/Recipe.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7387,
+								4448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 6,
+					"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								566,
+								569
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Administrator/Documents/GitHub/VIT/app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1057,
+								1057
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -273,7 +701,7 @@
 		"cols":
 		[
 			0.0,
-			0.481743323239,
+			0.40145672665,
 			1.0
 		],
 		"rows":
@@ -313,6 +741,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Administrator\\Documents\\Bitbucket\\ndapp.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
@@ -325,7 +757,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -333,7 +765,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 178.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
