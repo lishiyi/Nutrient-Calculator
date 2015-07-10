@@ -23,7 +23,7 @@ var GeneticSoylent = function(opts) {
     //alert("Denominator: " + this.ratios['Omega-6:Omega-3']['denominator']);
     //alert("Denominator: " + this.ratios['Soy Lecithin Granules:Sea Sal']['denominator']);
 
-    this.reset();
+    this.reset(); 
 };
 
 /**

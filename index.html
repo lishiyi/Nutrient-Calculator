@@ -22,6 +22,11 @@
             width: 50px;
             text-align: center;
         }
+
+        div.img {
+            position: relative;
+            left: 150px;
+        }
     </style>
 
 </head>
@@ -32,9 +37,9 @@
 
     <div class="row">
         <div class="col-xs-4">
-
-            <img src="logo.png" height="150" width="150">
-            <p><br></p>
+            <div class="img">
+                <img src="logo.png" height="150" width="150">
+            </div>
         </div>
         <div class="col-xs-8>">
             <br />
@@ -81,35 +86,40 @@
         </form>                                                             -->
     </div>
 
+
 {#
     <script type="text/javascript">
 
     $(function(){
+
         $('#clickJSON').click(function(){
         var jsonToRun = {"nutrientTargets": { "calories": 2605.68, "protein": 140, "fat": 56, "carbs": 385.42, "name": "mikewillmadeit@gmail.com", "gender": "Male", "age": 28 }};
         if(!jsonToRun.ingredients) { jsonToRun.ingredients = {"ingredients": [{"Nothing":""},]}  };
         testGeneticSoylent = new GeneticSoylent({
                     ingredients: convertJSONIngredientsToGeneticIngredients(jsonToRun.ingredients),
                     targetNutrients: convertJSONNutritionToGeneticNutrition(jsonToRun.nutrientTargets)
-        });
+                    });
 
         testGeneticSoylent.reset();
-        testGeneticSoylent.render();
-    });
-
-    $('#clickJSON2').click(function(){
-        var jsonToRun = {"nutrientTargets": { "calories": 3220.2, "protein": 160, "fat": 64, "carbs": 501.05, "name": "sebastian@vit.fitness", "gender": "Male", "age": 21 }};
-        if(!jsonToRun.ingredients) { jsonToRun.ingredients = {"ingredients": [{"Nothing":""},]}  };
-        testGeneticSoylent = new GeneticSoylent({
-                    ingredients: convertJSONIngredientsToGeneticIngredients(jsonToRun.ingredients),
-                    targetNutrients: convertJSONNutritionToGeneticNutrition(jsonToRun.nutrientTargets)
+        testGeneticSoylent.render(); 
         });
 
-        testGeneticSoylent.reset();
-        testGeneticSoylent.render();
+        $('#clickJSON2').click(function(){
+            var jsonToRun = {"nutrientTargets": { "calories": 3220.2, "protein": 160, "fat": 64, "carbs": 501.05, "name": "sebastian@vit.fitness", "gender": "Male", "age": 21 }};
+            if(!jsonToRun.ingredients) { jsonToRun.ingredients = {"ingredients": [{"Nothing":""},]}  };
+            testGeneticSoylent = new GeneticSoylent({
+                        ingredients: convertJSONIngredientsToGeneticIngredients(jsonToRun.ingredients),
+                        targetNutrients: convertJSONNutritionToGeneticNutrition(jsonToRun.nutrientTargets)
+            });
+
+            testGeneticSoylent.reset();
+            testGeneticSoylent.render();
+        });
+
     });
-    });
+
     </script>
+
 #}
 
     <button onclick="sb()">Get JSON </button>
