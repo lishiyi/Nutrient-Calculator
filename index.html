@@ -63,8 +63,9 @@
                 <input class="death-rate form-control input-sm" type="text" style="width: 50px; text-align: center" value="0.3" />
             </form>
 
-            <button id="clickJSON">Use Sample Target 1 for Test</button>
-            <button id="clickJSON2">Use Sample Target 2 for Test</button>
+            <button class="btn btn-default" disabled="disabled" id="clickJSON3">Reserved Button</button>
+            <button class="btn btn-info" id="clickJSON">Use Sample Target 1</button>
+            <button class="btn btn-info" id="clickJSON2">Use Sample Target 2</button>
         </div>
     </div>
 
@@ -78,7 +79,7 @@
         <h2>Choose Your Own Recipe</h2>
         <p>This should now work with any recipe from <a href='http://diy.soylent.me'>diy.soylent.me</a>. Find your favorite recipe, add "/json" to the end of the URL, copy the resulting text and paste it into the box below.</p>
         <p><em>Warning:</em> This is still very experimental. I've tried it with my own recipe and one other and it has worked, but I haven't double checked the numbers.</p>
-        <textarea id="inputJSON" rows="2" style="width:100%">
+        <textarea class="form-control" id="inputJSON" rows="2" style="width:100%">
         </textarea>
 
         
